@@ -4,6 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const os = require('os');
 const fs = require('fs');
 const LOG_FILE = '/var/log/vm-health.log';
+require('dotenv').config();
 
 const app = express()
 const port = process.env.PORT || 3000

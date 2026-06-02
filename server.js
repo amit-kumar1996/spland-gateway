@@ -73,6 +73,8 @@ app.use('/chat', createProxyMiddleware({
 	changeOrigin: true
 }));
 
+console.log("Env port: "+process.env.PORT)
+
 app.listen(port, () => {
 	console.log('Node main server running on port: ', port);
 })

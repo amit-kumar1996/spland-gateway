@@ -1,4 +1,4 @@
-require('/home/ubuntu/projects/node_apps/globalUnexpectedErrorHandler.js');
+require('/opt/apps/globalUnexpectedErrorHandler.js');
 const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const os = require('os');
@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
 	res.json({
-		message: 'Node main server is up and running'
+		message: 'Spland server is up and running'
 	})
 });
 

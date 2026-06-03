@@ -76,5 +76,5 @@ app.use('/chat', createProxyMiddleware({
 console.log("Env port: "+process.env.PORT)
 
 app.listen(port, () => {
-	console.log('Node main server running on port: ', port);
+	console.log('Spland backend server running on port: ', port);
 })
